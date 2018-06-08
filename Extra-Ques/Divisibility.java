@@ -13,7 +13,7 @@ public class Divisibility {
 		}
 		if( num % 5 == 0) {
 		
-			System.out.print("Learning");
+			System.out.printx("Learning");
 		}
 	}
 }
