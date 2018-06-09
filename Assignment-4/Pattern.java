@@ -4,9 +4,9 @@ public class Pattern {
 
 	public static void print(int size) {
 		
-		for(i = size; i > 0; i--)
+		for(int i = size; i > 0; i--)
 		{
-			for(j = i; j > 0; j--)
+			for(int j = i; j > 0; j--)
 			{
 				System.out.print("*");
 			}

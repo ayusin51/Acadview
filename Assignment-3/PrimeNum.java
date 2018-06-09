@@ -7,6 +7,8 @@ public class PrimeNum {
 	
 		boolean ans = true;
 		
+		if(num == 1) return false;
+		
 		int range = (int)sqrt(num);
 		for(int i = 2; i < range; i++)
 		{

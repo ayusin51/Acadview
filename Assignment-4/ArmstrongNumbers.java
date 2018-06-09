@@ -10,6 +10,7 @@ public class ArmstrongNumbers {
 			count++;
 			num /= 10;
 		}
+		return count;
 	}
 
 	public static int calc(int num) {
@@ -18,7 +19,7 @@ public class ArmstrongNumbers {
 		int sum = 0;
 		while(num != 0) {
 			
-			sum += Math.power(num%10, digit);
+			sum += Math.pow(num%10, digit);
 			num /= 10;
 		}
 		

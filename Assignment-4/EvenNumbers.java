@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class EvenNumbers {
 
-	public stativ boolean isEven(int num) {
+	public static boolean isEven(int num) {
 		
 		if(num % 2 == 0)
 			return true;
