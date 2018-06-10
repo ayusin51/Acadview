@@ -31,10 +31,7 @@ public class ArmstrongNumbers {
 		
 		if(num == calc(num)) {
 			
-			System.out.println("Armstrong Number");
-		}else {
-		
-			System.out.println("Not an Armstrong Number");
+			System.out.println(num);
 		}
 	}
 
@@ -43,7 +40,8 @@ public class ArmstrongNumbers {
 		Scanner sc = new Scanner(System.in);
 		int num = sc.nextInt();
 		
-		checkArmstrong(num);
+		for(int i = 0; i <= num; i++)
+		checkArmstrong(i);
 	}
 	
 }
