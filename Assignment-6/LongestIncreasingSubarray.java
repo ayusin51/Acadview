@@ -13,7 +13,7 @@ public class LongestIncreasingSubarray {
 				i++;
 			}
 			if(count > len) len = count;
-			count = 0;
+			count = 1;
 		}
 		
 		return len;
