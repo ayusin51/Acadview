@@ -10,9 +10,9 @@ public class OverloadPrint {
 			System.out.println("Int : " + a);
 		}
 	
-	void print (char c) {
+	void print (float c) {
 		
-		System.out.println("Char : " + c);
+		System.out.println("Float : " + c);
 	}
 
 	public static void main(String[] args) {
@@ -21,7 +21,7 @@ public class OverloadPrint {
 		OverloadPrint obj = new OverloadPrint();
 		obj.print();
 		obj.print(1);
-		obj.print('a');
+		obj.print(1.3f);
 
 	}
 
