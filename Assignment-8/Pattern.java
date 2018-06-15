@@ -13,6 +13,8 @@ public class Pattern {
 	}
 	
 	void print() {
+
+	// Another Solution is in Extra-Ques folder
 		
 		/*char ch = 'a';
 		
