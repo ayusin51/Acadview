@@ -14,17 +14,17 @@ public class Pattern {
 	
 	void print() {
 
-	// Another Solution is in Extra-Ques folder
 		
-		/*char ch = 'a';
+		char ch = 'a';
 		
 		for(int i = 0; i < len; i++) {
 			ch = 'a';
 			for(int j = -(len-1); j < len; j++) {
 				
 				if(i >= Math.abs(j)) {
-					System.out.print(ch);
+					System.out.print(ch + " " );
 					ch++;
+					j++;
 				}else {
 					System.out.print(" ");
 				}
@@ -32,9 +32,9 @@ public class Pattern {
 			}
 			System.out.println();
 			
-		}*/
+		}
 		
-		for(int i = 0; i < len; i++) {
+		/*for(int i = 0; i < len; i++) {
 			
 			char ch = 'a';
 			for(int j = 0; j <= i; j++) {
@@ -42,7 +42,7 @@ public class Pattern {
 				System.out.print(ch++);
 			}
 			System.out.println(5);
-		}
+		}*/
 		
 	}
 
