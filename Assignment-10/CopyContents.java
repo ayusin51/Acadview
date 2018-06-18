@@ -11,8 +11,8 @@ public class CopyContents {
 	
 	public static void main(String[] args) throws IOException {
 		
-		File f1 = new File("File-1.txt");
-		File f2 = new File("C:\\Users\\Lenovo\\Desktop\\Acadview\\Assignment-10\\File-2.txt");
+		File f1 = new File("C:\\Users\\Lenovo\\Desktop\\Acadview\\Assignment-10\\abc.txt");
+		File f2 = new File("C:\\Users\\Lenovo\\Desktop\\Acadview\\Assignment-10\\xyz.txt");
 		FileReader fr = null;
 		
 		try {
@@ -23,19 +23,26 @@ public class CopyContents {
 			while(( c = fr.read()) != -1) {
 				
 				str += (char)c;
-				System.out.print((char)c);
 			}
+			
+			fr.close();
 			
 			FileWriter fw = new FileWriter(f2);
 			fw.write(str);
 			fw.close();
 			
+			System.out.println("Contents : ");
+			
+			fr = new FileReader(f2);
+			while(( c = fr.read()) != -1) {
+				
+				System.out.print((char)c);
+			}
+			fr.close();
+			
 		} catch (FileNotFoundException e) {
 		
 			e.printStackTrace();
-		} finally {
-			if (fr != null)
-				fr.close();
 		}
 	}
 
