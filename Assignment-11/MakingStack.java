@@ -6,7 +6,7 @@ public class MakingStack {
 	private int capacity = 5;
 	private int arr[] = new int[5];
 	
-	void copy(int [] temp) {
+	private void copy(int [] temp) {
 		
 		int i = 0;
 		while(i < size) {
@@ -16,7 +16,7 @@ public class MakingStack {
 		}
 	}
 	
-	void expandSize() {
+	private void expandSize() {
 		
 		capacity *= 2;
 		int temp[] = new int[capacity];
@@ -39,6 +39,11 @@ public class MakingStack {
 			System.out.println("Stack is Empty!!");
 		else
 			size--;
+	}
+	
+	public boolean isEmpty() {
+		
+		return (size == 0);
 	}
 	
 	public int getSize() {
@@ -72,12 +77,24 @@ public class MakingStack {
 			System.out.println("Capacity : " + obj.getCapacity() + "\n");
 		}
 		
+		if(obj.isEmpty()) {
+			System.out.println("Stack is Empty !!");
+		} else {
+			System.out.println("Stack is not Empty!!");
+		}
+		
 		for(int i = 0; i <=12; i++) {
 			
 			obj.pop();
 			System.out.println("Last : " + obj.top());
 			System.out.println("Size : " + obj.getSize());
 			System.out.println("Capacity : " + obj.getCapacity() + "\n");
+		}
+		
+		if(obj.isEmpty()) {
+			System.out.println("Stack is Empty !!");
+		} else {
+			System.out.println("Stack is not Empty!!");
 		}
 
 	}
