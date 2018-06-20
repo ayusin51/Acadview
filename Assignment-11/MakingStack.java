@@ -2,9 +2,17 @@ package FirstPackage;
 
 public class MakingStack {
 	
-	private int size = 0;
-	private int capacity = 5;
-	private int arr[] = new int[5];
+	private int size;
+	private int capacity;
+	private int arr[];
+	
+	public MakingStack() {
+		// TODO Auto-generated constructor stub
+		
+		size = 0;
+		capacity = 5;
+		arr = new int[5];
+	}
 	
 	private void copy(int [] temp) {
 		
@@ -37,8 +45,11 @@ public class MakingStack {
 	public void pop() {
 		if (size == 0)
 			System.out.println("Stack is Empty!!");
-		else
+		else {
+			
+			arr[size-1] = 0;
 			size--;
+		}
 	}
 	
 	public boolean isEmpty() {
