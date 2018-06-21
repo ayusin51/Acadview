@@ -10,7 +10,7 @@ public class Project {
 		File f = new File(path);
 		File [] files = f.listFiles();
 		for(File file : files) {
-			System.out.println("Name : "+file.getName()+" \nPath : "+file.getAbsolutePath());
+			System.out.println("Name : "+file.getName()+" ------>Path : "+file.getAbsolutePath());
 			if(file.isFile()) {
 				array.add(file);
 			} else if(file.isDirectory()) {
