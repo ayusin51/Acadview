@@ -33,7 +33,9 @@ public class Project {
 			File file1 = new File("abc.txt");
 			file1.createNewFile();
 			FileWriter fileWriter1 = new FileWriter(file1);
-			fileWriter1.write(p1+10+p2);
+			fileWriter1.write(p1);
+			fileWriter1.write(10);
+			fileWriter1.write(p2);
 			fileWriter1.close();
 			
 			populateArray(p1,array);
