@@ -11,8 +11,7 @@
         android:layout_height="wrap_content"
         android:text="Hello World!"
         android:textSize="40sp"
-        android:layout_gravity="center"
-        />
+        android:layout_gravity="center" />
 
     <EditText
         android:layout_width="wrap_content"

@@ -11,19 +11,22 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    /*Button btn = (Button) findViewById(R.id.button);*/
+
 
     @Override
     protected void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        /*btn.setOnClickListener(new View.OnClickListener(){
+        Button btn = (Button) findViewById(R.id.button);
+
+        btn.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v) {
 
-               // Toast t = new Toast(getApplicationContext());
+                Toast t = Toast.makeText(getApplicationContext(), "This is a Toast", t.LENGTH_SHORT);
+                t.show();
             }
-        });*/
+        });
     }
 
     @Override
