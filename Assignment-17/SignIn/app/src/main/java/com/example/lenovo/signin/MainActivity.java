@@ -34,10 +34,10 @@ public class MainActivity extends AppCompatActivity {
 
                     message.setText("");
                     Intent intent = new Intent(getApplicationContext(), Login.class);
-                    intent.putExtra("Name", name.getText());
-                    intent.putExtra("Name", userid.getText());
-                    intent.putExtra("Name", password.getText());
-                    intent.putExtra("Name", mobile.getText());
+                    intent.putExtra("name", name.getText().toString());
+                    intent.putExtra("userid", userid.getText().toString());
+                    intent.putExtra("password", password.getText().toString());
+                    intent.putExtra("mobile", mobile.getText().toString());
                     startActivity(intent);
 
 
