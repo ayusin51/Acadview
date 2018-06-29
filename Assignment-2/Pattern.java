@@ -2,24 +2,25 @@ import java.util.Scanner;
 
 public class Pattern {
 
-	public static void print(int size) {
+	public static void Print(int size) {
 		
-		for(int i = size; i > 0; i--)
+		int i, j;
+		for(i = 0; i < size; i++)
 		{
-			for(int j = i; j > 0; j--)
+			for(j = 0; j <= i; j++)
 			{
 				System.out.print("*");
 			}
-		
-			System.out.println();
+			
+			System.out.print("\n");
 		}
 	}
 	
 	public static void main(String[] args) {
-		
+	
 		Scanner sc = new Scanner(System.in);
 		int size = sc.nextInt();
-	
-		print(size);
+		
+		Print(size);
 	}
 }
